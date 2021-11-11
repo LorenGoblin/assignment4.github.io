@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Qalyn calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Dowry calculator</h1>
+                <form>
+
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="blank"></option>
+                        <option value="bachelor">Bachelor's degree</option>
+                        <option value="college">College degree</option>
+                        <option value="high_school">High school degree</option>
+                        <option value="middle_school">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth">
+                        <option value="blank"></option>
+                        <option value="upper_class">More than 100,000$</option>
+                        <option value="middle_class">Between 50,000$ and 100,000$</option>
+                        <option value="lower_class">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                    <!-- CONTINUE YOUR ASSIGNMENT HERE!!! -->
+                    <label for="Caste">Caste</label><br>
+                    <select id="Caste">
+                        <option value="CasteBlank"></option>
+                        <option value="Caste_Brahmin">Brahmin</option>
+                        <option value="Caste_Kshatriya">Kshatriya</option>
+                        <option value="Caste_Vaishya">Vaishya</option>
+                        <option value="Caste_Shudra">Shudra</option>
+                        <option value="Caste_Varna">Varna</option>
+                    </select>
+                    <hr>
+                    <h6>Bride's skills</h6>
+                    <div>
+                      <input type="checkbox" id="Bride's skills" name="instruments" value = "10">
+                      <label for="skills">Playing on a musical instrument</label>
+                      <br>
+                      <input type="checkbox" id="Bride's skills" name="cook" value = "20">
+                      <label for="skills">Good cook</label>
+                      <br>
+                      <input type="checkbox" id="Bride's skills" name="easygoingCharacter" value = "15">
+                      <label for="skills">Easygoing character</label>
+                      <br>
+                      <input type="checkbox" id="Bride's skills" name="sings" value = "10">
+                      <label for="skills"> Sings well</label>
+                    </div>
+                    <hr>
+
+                    <h6>Bride's Age</h6>
+
+                    <div>
+                      <input type="radio" id="eighteen"
+                       name="age" value="1.5">
+                      <label for="contactChoice1">Between 18-23</label>
+                      <br>
+                  
+                      <input type="radio" id="twentyFour"
+                       name="age" value="1.2">
+                      <label for="contactChoice2">Between 24-27 </label>
+                      <br>
+                  
+                      <input type="radio" id="twentyEight"
+                       name="age" value="0.95">
+                      <label for="contactChoice3">28+</label>
+                    </div>
+                    <hr>
+
+                    <h6>Bride's reputation</h6>
+
+                    <div>
+                      <input type="checkbox" id="Bride's reputation" name="parents" value ="0.85">
+                      <label for="reputation">Gossips about her parent's attitude</label>
+                      <br>
+                      <input type="checkbox" id="Bride's reputation" name="GossipsCharacter" value = "0.9">
+                      <label for="reputation">Gossips about her character</label>
+                      <br>
+                      <input type="checkbox" id="Bride's reputation" name="Person" value = "20">
+                      <label for="reputation">General gossips around her person</label>
+                      <br>
+                    </div>
+
+                </form>
+                <button id="submit" type="button" class="btn btn-primary" onclick="calculate()">Calculate price</button>
+                <div id = "nameRes"></div>
+                <div id = "result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
